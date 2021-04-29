@@ -161,6 +161,11 @@ p{
     border: 2px solid white;
     border-radius: var(--size-border-radius);
     color: var(--color-white);
+    transition: all var(--animation-duration) ease-in;
+}
+.home_contact:hover{
+    background-color: orange;
+    color: black;
 }
 /* section common */
 .section{
@@ -466,14 +471,61 @@ p{
 
 /* for blelow 768px screen width */
 @media screen and (max-width:768px){
+    :root{
+         /* font-size */
+    --font-large: 38px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+    }
+    .body{
+        overflow: hidden;
+    }
     .navbar__toggle-btn{
         display: block;
+        top:50px;
+        font-size: var(--font-medium);
+    }
+
+    .category__btn{
+        margin:4px 0;
+        width:100%;
     }
     #navbar{
         flex-direction: column;
         align-items:flex-start;
         background-color: var(--color-pink);
         padding: 16px;;
+    }
+    #section{
+        padding:16px;
+        padding-top: 40px;
+    }
+    .testmonial{
+        flex-direction: column;
+        text-align: center;
+    }
+    .testmonials__avartar{
+        width: 120px;
+        height: 120px;
+
+    }
+    .testmonials__avartar:nth-child(even),
+    .testmonials__avartar:nth-child(odd){
+        margin:0;
+        margin-bottom: 8px;
+    }
+    .testmonials__speech-bubble{
+        order:1
+    }
+    .arrowup{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        line-height: 50px;
+        right: 16px;
+        bottom: 16px;
     }
 
     #navbar{
