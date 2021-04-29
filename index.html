@@ -11,18 +11,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="img/png" href="imgs/logo.png">
+    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
+    
     <!-- navbar -->
     <nav id="navbar">
         <div class="navbar_logo">
-             <img src="imgs/logo.png" alt="">
+             <img src="imgs/logo.png" alt="eric logo">
              <a href="#">Eric</a>
         </div>
         <div class="navbar_menu">
              <ul class="navbar_menu">
-                 <li class="navbar_menu_item">Home</li>
+                 <li class="navbar_menu_item active">Home</li>
                  <li class="navbar_menu_item">About</li>
                  <li class="navbar_menu_item">Skills</li>
                  <li class="navbar_menu_item">Work</li>
@@ -39,41 +41,62 @@
         <button class="home_contact">Contact Me!</button>
     </section>
     <!-- about -->
-    <section id="about">
-        <h1>about me</h1>
+    <section id="about section_container" class="section">
+        <h1>About me</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quos repellendus ducimus, nesciunt est voluptates reiciendis illum sed quas culpa eum quasi molestiae dolorem, soluta totam rem blanditiis pariatur distinctio?</p>
         <div class="about__majors">
             <div class="major">
-                <div class="major_icon"><i class="fab fa-html5"></i></div>
-                <div class="major_title">Front-end</div>
+                <div class="major_icon">
+                    <i class="fab fa-html5 image"></i>
+                </div>
+                <h2 class="major_title">Front-end</h2>
                 <div class="major_description">HTML, CSS, Javascript, TypeScript<br/> React</div>
             </div>
             <div class="major">
-                <div class="major_icon"><i class="fab fa-html5"></i></div>
-                <div class="major_title">Front-end</div>
+                <div class="major_icon"><i class="fab fa-html5 image"></i></div>
+                <h2 class="major_title">Front-end</h2>
                 <div class="major_description">HTML, CSS, Javascript, TypeScript<br/> React</div>
             </div>
             <div class="major">
-                <div class="major_icon"><i class="fab fa-html5"></i></div>
-                <div class="major_title">Front-end</div>
+                <div class="major_icon"><i class="fab fa-html5 image"></i></div>
+                <h2 class="major_title">Front-end</h2>
                 <div class="major_description">HTML, CSS, Javascript, TypeScript<br/> React</div>
             </div>
         </div>
         <div class="about__jobs">
             <div class="job">
-                <img src="imgs/jobs/siemenslogo.png" alt="Siemens" class="job__logo">
-                <p class="job__name">Electronics Technician</p>
-                <p class="job__logo">2019,August - 2020,September</p>
+                <img src="imgs/jobs/school.png" alt="Centennial College" class="job__logo">
+                <div class="job_description">
+                <p class="job__name">Diploma Awarded: Electronics Engineering technician</p>
+                <p class="job__period">2016,September - 2018,April</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs/school.png" alt="Centennial College" class="job__logo">
+                <div class="job_description">
+                <p class="job__name">Advance Diploma Awarded: Electronics Engineering technology</p>
+                <p class="job__period">2018,September - 2019,April</p>
+                </div>
             </div>
             <div class="job">
                 <img src="imgs/jobs/siemenslogo.png" alt="Siemens" class="job__logo">
-                <p class="job__name">Electronics Technician(FA)</p>
-                <p class="job__logo">2020,September - 2021,April</p>
+                <div class="job_description">
+                <p class="job__name">Electronics Technician</p>
+                <p class="job__period">2019,August - 2020,September</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs/siemenslogo.png" alt="Siemens" class="job__logo">
+                <div class="job_description">
+                    <p class="job__name">Electronics Technician(FA)</p>
+                    <p class="job__period">2020,September - 2021,April</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- skills -->
-    <section id="skills">
+    <section id="skills"class="section">
+    <div class="section_container">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>Experience with all phase of the software. Strong passion for learning new technologies. Capable of working
@@ -82,50 +105,60 @@
         </p>
         <div class="skilset">
             <div class="skillset_left">
-                <h3 class="skillset_title"></h3>
+                <h3 class="skillset_title">Skills</h3>
                 <div class="skill">
                     <div class="skill_description">
                         <span>HTML</span>
                         <span>99%</span>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div>
-                        </div>
                     </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style='width:80%'></div>
+                    </div>
+                </div>
+                <div class="skill">
                     <div class="skill_description">
                         <span>HTML</span>
                         <span>99%</span>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div>
-                        </div>
                     </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style='width:80%'></div>
+                    </div>
+                </div>
+                <div class="skill">
                     <div class="skill_description">
                         <span>HTML</span>
                         <span>99%</span>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div>
-                        </div>
                     </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style='width:80%'></div>
+                    </div>
+                </div>
+                <div class="skill">
                     <div class="skill_description">
                         <span>HTML</span>
                         <span>99%</span>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div>
-                        </div>
                     </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style='width:80%'></div>
+                    </div>
+                </div>
+                <div class="skill">
                     <div class="skill_description">
                         <span>HTML</span>
                         <span>99%</span>
-                        <div class="skill__bar">
-                            <div class="skill__value"></div>
-                        </div>
                     </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style='width:80%'></div>
+                    </div>
+                </div>
+                <div class="skill">
                     <div class="skill_description">
                         <span>HTML</span>
                         <span>99%</span>
+                    </div>
                         <div class="skill__bar">
-                            <div class="skill__value"></div>
-                        </div>
-                    </div> 
+                            <div class="skill__value" style='width:80%'></div>
+                    </div>
                 </div>
             </div>
             <div class="skillset_right">
@@ -149,9 +182,10 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <!-- work -->
-    <section id="work">
+    <section id="work"class="section">
     <h1>My work</h1>
     <h3>Projects</h3>
     <div class="work_categories">
@@ -207,7 +241,7 @@
     </div>
     </section>
     <!-- testimonials -->
-    <section id="testimonials">
+    <section id="testimonials"class="section">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testmonials">
@@ -215,28 +249,29 @@
                 <img src="imgs/testmonials/people1.png" alt="people" class="testmonials__avartar">
                 <div class="testmonials__speech-bubble">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veniam id sint, alias, a incidunt nesciunt ipsa ea beatae voluptate nostrum? Repudiandae, assumenda. A inventore, dolores culpa perferendis eligendi deserunt.</p>
-                    <p class="name"><a href="#">Vimal</a>Siemens Ruggedcom</p>
+                    <p class="name"><a href="#">Vimal/</a> Siemens Ruggedcom</p>
                 </div>
             </div>
             <div class="testmonial">
-                <img src="imgs/testmonials/people1.png" alt="people" class="testmonials__avartar">
+
                 <div class="testmonials__speech-bubble">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veniam id sint, alias, a incidunt nesciunt ipsa ea beatae voluptate nostrum? Repudiandae, assumenda. A inventore, dolores culpa perferendis eligendi deserunt.</p>
-                    <p class="name"><a href="#">Vimal</a>Siemens Ruggedcom</p>
+                    <p class="name"><a href="#">Vimal/</a> Siemens Ruggedcom</p>
                 </div>
+                <img src="imgs/testmonials/people1.png" alt="people" class="testmonials__avartar">
             </div>
         </div>
     </section>
     <!-- contact -->
-    <section id="contact">
+    <section id="contact"class="section">
         <h1 class="contact_title">Let's talk</h1>
         <h2 class="contact_email">rudwo8134@gmail.com</h2>
         <div class="contact_link">
             <a href="" targer="blank">
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github logol"></i>
             </a>
             <a href="" targer="blank">
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin logol"></i>
             </a>
         </div>
         <p class="contact__right">
