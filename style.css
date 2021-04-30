@@ -34,6 +34,10 @@
 *{
     box-sizing: border-box;
 }
+html,body{
+    height: 100%;
+    width: 100%;
+}
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -172,6 +176,22 @@ p{
     color: black;
 } */
 
+.home_contact{
+    font-size:var(--font-regular);
+    font-weight: var(--weight-bold);
+    position: relative;
+    right:26px;
+    margin:24px;
+    padding:8px 12px;
+    border: 2px solid var(--color-dark-white);
+    border-radius: var(--size-border-radius);
+    color: var(--color-orange);
+    transition: all var(--animation-duration) ease-in;
+}
+.home_contact:hover{
+    background-color: orange;
+    color: black;
+}
 
 .home_container{
     width: 100%;
@@ -544,7 +564,6 @@ p{
     pointer-events: auto;
     opacity: 1;
 }
-
 /* for blelow 768px screen width */
 @media screen and (max-width:768px){
     :root{
@@ -555,14 +574,59 @@ p{
     --font-small: 14px;
     --font-micro: 12px;
     }
-    .body{
-        overflow: hidden;
+    body{
+    width: 100%;
+    overflow-x: hidden;
     }
+
     .navbar__toggle-btn{
         display: block;
-        top:50px;
+        top:30px;
         font-size: var(--font-medium);
     }
+    .home_container .bg1{
+        height:100vh;
+        width: 100%;
+    }
+    .home_container .me{
+        position: absolute;
+        top:20vh;
+        width: 100%;
+        height: 60vh;
+    }
+    .home_container .send{
+        position: absolute;
+        width: 100%;
+        top:58vh;
+        height: 40vh;
+    }
+    .home_container .text{
+    transform: translate(0,50px);
+    }
+
+    .home_container .text1{
+        width: 100%;
+        font-size:18px;
+    }
+    .home_container .text2{
+        width: 100%;
+        font-size:24px;
+    }
+    .home_container .text3{
+        width: 100%;
+        font-size:19px;
+    }
+    .home_container .text4{
+        width: 100%;
+        font-size:18px;
+    }
+    .home_contact{
+        position: relative;
+        top:30px;
+        font-size: 13px;
+    }
+ 
+    
 
     .category__btn{
         margin:4px 0;
@@ -572,8 +636,11 @@ p{
         flex-direction: column;
         align-items:flex-start;
         background-color: var(--color-pink);
-        padding: 16px;;
+        padding:16px;
+        position: fixed;
     }
+    
+    
     #section{
         padding:16px;
         padding-top: 40px;
@@ -604,16 +671,20 @@ p{
         bottom: 16px;
     }
 
-    #navbar{
-        padding:16px;
-    }
     .navbar_menu{
         display: flex;
         flex-direction: column;
         text-align: center;
         width: 100%;
         display: none;
+        margin-top: 0px;
+        background-color: var(--color-pink);
+      
     }
+    .navbar_menu_item{
+        margin:0;
+    }
+    
     .navbar_menu.open{
        display:block
     }
