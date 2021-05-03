@@ -622,10 +622,8 @@ p{
         top:500px
     }
     .main-title{
-        top: 200px;
-        left: 90px;
-        width: 180px;
-        height: 300px;
+        right:121px;
+        width: 150px;
     }
     .text{
         width: 180px;
