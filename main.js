@@ -103,3 +103,5 @@ function scrollintoview(id){
     const scrollTo = document.querySelector(id);
     scrollTo.scrollIntoView({behavior:'smooth'});
 }
+
+var docWidth = document.documentElement.offsetWidth;

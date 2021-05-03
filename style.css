@@ -574,13 +574,13 @@ p{
     --font-small: 14px;
     --font-micro: 12px;
     }
-    html{
+    
+    body,html{
+        height: 100%;
         width: 100%;
     }
     body{
-        height: 100%;
-        width: 100%;
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
     /* navbar update */
     #navbar{
@@ -621,17 +621,30 @@ p{
     .send{
         top:500px
     }
+    .main-title{
+        top: 200px;
+        left: 90px;
+        width: 180px;
+        height: 300px;
+    }
+    .text{
+        width: 180px;
+    }
     .text .text1{
         font-size: 16px;
+        width: 150px;
     }
     .text .text2{
         font-size: 30px;
+        width: 180px;
     }
     .text .text3{
         font-size: 18px;
+        width: 180px;
     }
     .text .text4{
         font-size: 24px;
+        width: 180px;
     }
     .home_contact{
         font-size: 15px;
@@ -694,14 +707,11 @@ p{
         order: 2;
     }      
     .arrowup{
-        position: fixed;
-        text-align: center;
-        padding: auto;
-        border-radius: 50%;
         height: 50px;
         width: 50px;
         bottom:30px;
         right:30px;
+        font-size: 30px;
     }
 
     /* body{
